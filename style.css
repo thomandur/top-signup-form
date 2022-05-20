@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Norse bold";
+  src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
 html, *{
   padding: 0;
   margin: 0;
@@ -20,15 +24,59 @@ html, *{
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 30px;
 }
 .signup-container > div{
  width: 100%;
 }
-.signup-container > .signup-description > p {
+.signup-container > .signup-description > p, .signup-container > .signup-form-container > p {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 30px;
   line-height: 1.3em;
   width: 60%;
+}
+.signup-container > .signup-description{
+  padding: 30px;
+}
+.signup-form-container{
+  background: #ffffff;
+  padding: 30px;
+}
+.signup-form-container > form > fieldset{
+  display: flex;
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  width: 20%;
+}
+.form-control label{
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #1F2937;
+}
+.form-control input{
+  padding: 5px;
+  border: 1px solid #EBEDF0;
+  border-radius: 5px;
+}
+.signup-button{
+  padding: 30px;
+}
+.signup-button button{
+  background: #596D48;
+  border-radius: 10px;
+  padding: 15px 30px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.signup-button p a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #596D48;
 }
