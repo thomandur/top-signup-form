@@ -12,7 +12,7 @@
     <div class="image-container">
       <div class="image-text">
         <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="The Odin Project logotype">
-        Odin
+        <span>Odin</span>
       </div>
     </div>
     <div class="signup-container">
@@ -54,10 +54,12 @@
             <div class="form-control">
               <label for="password">Password</label>
               <input type="password" name="password" required />
+              <span class="error">* Passwords do not match</span>
             </div>
             <div class="form-control">
               <label for="cPassword">Confirm Password</label>
               <input type="password" name="cPassword" required />
+              <span class="error">* Passwords do not match</span>
             </div>
           </fieldset>
         </form>

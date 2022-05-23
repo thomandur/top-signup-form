@@ -8,6 +8,7 @@ html, *{
   border: 0px;
   font-family: sans-serif;
   font-size: 16px;
+  outline: none; 
 }
 html, body {
   height: 100%;
@@ -20,18 +21,22 @@ html, body {
 }
 .image-text{
   background: rgba(0,0,0,.4);
-  font-family: "Norse bold";
-  font-size: 7em;
-  color: #ffffff;
-  vertical-align: middle;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 33%;
+  align-items: center;
   padding: 15px;
 }
+.image-text span{
+  font-family: "Norse bold";
+  font-size: 5em;
+  color: #ffffff;
+  padding-top: 20px;
+}
 .image-text img{
-  width: 15%;
-  height: auto;
+  width: 25%;
+  height: 100%;
   vertical-align: middle;
 }
 .image-container{
@@ -65,6 +70,7 @@ html, body {
 .signup-form-container{
   background: #ffffff;
   padding: 30px;
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 20%);
 }
 .signup-form-container > form > fieldset{
   display: flex;
@@ -74,7 +80,7 @@ html, body {
   flex-direction: column;
   margin-right: 40px;
   margin-bottom: 15px;
-  width: 20%;
+  width: 30%;
 }
 .form-control label{
   text-transform: uppercase;
@@ -87,6 +93,12 @@ html, body {
   padding: 5px;
   border: 1px solid #EBEDF0;
   border-radius: 5px;
+}
+.error{
+  color: red;
+  margin-top: 5px;
+  font-size: 0.8em;
+  display: none;
 }
 .signup-button{
   padding: 30px;
@@ -104,3 +116,13 @@ html, body {
   font-weight: bold;
   color: #596D48;
 }
+input:focus{
+  border: 1px solid #4583ff;
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 20%);
+}
+input[type=password]:invalid {
+  border: 1px solid red;
+}
+input[type=password]:invalid + span.error{
+  display: block;
+} 
